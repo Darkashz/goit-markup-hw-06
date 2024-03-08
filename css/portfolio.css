@@ -1,70 +1,70 @@
 @import url("./style.css");
 
 .filters-section {
-	padding-top: 94px;
+  padding-top: 94px;
 }
 
 .filters-section-list {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 40px;
-	white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  white-space: nowrap;
 }
 
 .filters-section-list-button {
-	padding: 12px 24px;
-	border: 1px solid var(--cornflower);
-	border-radius: 4px;
-	background: var(--cloud);
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 1.5;
-	letter-spacing: 0.04em;
-	text-align: center;
-	color: var(--iris);
+  padding: 12px 24px;
+  border: 1px solid var(--cornflower);
+  border-radius: 4px;
+  background: var(--cloud);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: var(--iris);
 }
 
 .filters-section-list-button:hover {
-	color: var(--white);
-	background: var(--ocean);
-	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-	scale: 1.015;
-	cursor: pointer;
+  color: var(--white);
+  background: var(--ocean);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  scale: 1.015;
+  cursor: pointer;
 }
 
 .section-row-list {
-	display: flex;
-	justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .project-card {
-	border: 1px solid var(--cornflower);
-	background: var(--white);
+  border: 1px solid var(--cornflower);
+  background: var(--white);
 }
 
 .project-card:hover {
-	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-	scale: 1.015;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  scale: 1.1;
 }
 
 .project-card-info {
-	display: flex;
-	flex-direction: column;
-	margin: 32px 0 32px 16px;
+  display: flex;
+  flex-direction: column;
+  margin: 32px 0 32px 16px;
 }
 
 .project-card-info h2 {
-	font-weight: 500;
-	font-size: 20px;
-	line-height: 1.2;
-	letter-spacing: 0.02em;
-	color: var(--navy-blue);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
 }
 
 .project-card-info span {
-	font-size: 16px;
-	line-height: 1.5;
-	letter-spacing: 0.02em;
-	color: var(--slate);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
 }
