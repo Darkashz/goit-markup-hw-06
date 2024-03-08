@@ -112,6 +112,7 @@ li {
   line-height: 1.16667;
   letter-spacing: 0.03em;
   color: var(--iris);
+  width: 121px;
 }
 
 .footer-logo::after {
@@ -141,9 +142,10 @@ li {
 }
 
 .footer-social-links {
-  font-weight: 500;
+  font-family: var(--font-family);
+  font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 150%;
   letter-spacing: 0.02em;
   color: var(--white);
   display: flex;
@@ -180,6 +182,6 @@ li {
 
 .footer-icon:hover,
 .footer-icon:active {
-  background: var(--iris);
+  background: var(--green);
   border-radius: 50%;
 }
