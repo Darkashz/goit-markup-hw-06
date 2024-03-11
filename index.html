@@ -17,6 +17,7 @@
     />
     <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link rel="stylesheet" href="./css/studio.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
 
     <title>WebStudio</title>
   </head>
@@ -47,7 +48,7 @@
             <li>
               <a
                 class="navbar-list-item"
-                href=""
+                href="contacts.html"
                 target="_blank"
                 rel="noopener nofollow noreferrer"
                 >Contacts</a
@@ -71,7 +72,54 @@
       <section class="section section-one">
         <div class="container hero-section">
           <h1>Effective Solutions for Your Business</h1>
-          <button type="button">Order Service</button>
+          <button type="button" data-modal-open>Order Service</button>
+        </div>
+        <div class="modal is-hidden" data-modal>
+          <div class="modal-content">
+            <button type="button" class="close-btn" data-modal-close>
+              &times;
+            </button>
+            <h2>Leave your contacts and we will call you back</h2>
+
+            <div class="inputs">
+              <div class="input-class">
+                <label for="name">Name</label>
+                <input type="text" class="input-with-icon" />
+                <svg class="input-icon">
+                  <use xlink:href="./images/modal.svg#icon-name"></use>
+                </svg>
+              </div>
+
+              <div class="input-class">
+                <label for="phone">Phone</label>
+                <input type="tel" class="input-with-icon" />
+                <svg class="input-icon">
+                  <use xlink:href="./images/modal.svg#icon-phone"></use>
+                </svg>
+              </div>
+
+              <div class="input-class">
+                <label for="email">Email</label>
+                <input type="email" class="input-with-icon" />
+                <svg class="input-icon">
+                  <use xlink:href="./images/modal.svg#icon-email"></use>
+                </svg>
+              </div>
+
+              <div class="input-class">
+                <label for="comments">Comments</label>
+                <textarea placeholder="Text input"></textarea>
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" />
+                <label for="terms"
+                  >I accept the terms and conditions of the
+                  <span>Privacy Policy</span></label
+                >
+              </div>
+            </div>
+            <button type="button" class="send-btn">Send</button>
+          </div>
         </div>
       </section>
 
@@ -526,5 +574,11 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      feather.replace();
+    </script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/navbar-border.js"></script>
   </body>
 </html>
