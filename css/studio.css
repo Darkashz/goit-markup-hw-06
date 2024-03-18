@@ -173,12 +173,12 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	transition: background-color, color var(--transition);
+	transition: background-color var(--transition), color var(--transition);
 }
 
 .social-icon:hover,
 .social-icon:active {
-	background: var(--iris);
+	background-color: var(--iris);
 	border-radius: 50%;
 	color: var(--white);
 }
@@ -232,6 +232,11 @@
 	margin-bottom: 24px;
 }
 
+.close-btn:hover {
+	color: var(--ocean);
+	background-color: var(--white);
+}
+
 .modal-content h2 {
 	font-family: var(--font-family);
 	font-weight: 500;
@@ -268,8 +273,8 @@ label {
 }
 
 .input-with-icon {
-	padding: 8px 16px;
-	border: 1px solid var(--iris);
+	padding: 8px 16px 8px 32px;
+	border: 1px solid var(--navy-blue-modal);
 	border-radius: 4px;
 }
 
@@ -278,14 +283,26 @@ label {
 	height: 24px;
 	padding: 3px 0;
 	position: absolute;
-	top: 26px;
+	top: 22px;
 	left: 16px;
 	pointer-events: none;
 }
 
-textarea {
-	height: 120px;
+.input-with-icon:focus {
 	border: 1px solid var(--iris);
+	border-radius: 4px;
+	outline: none;
+}
+
+.input-with-icon:focus ~ .input-icon {
+	fill: var(--iris);
+	outline: none;
+}
+
+textarea {
+	padding: 8px 16px;
+	height: 120px;
+	border: 1px solid var(--navy-blue-modal);
 	border-radius: 4px;
 	font-family: var(--font-family);
 	font-weight: 400;
@@ -297,16 +314,37 @@ textarea {
 
 .checkbox {
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	gap: 8px;
 	margin-bottom: 24px;
 }
 
-.checkbox input {
+.checkbox .checkbox-input {
+	appearance: none;
+}
+
+.checkbox .icon-checkbox {
+	width: 16px;
+	height: 16px;
+	fill: none;
+	margin-right: 8px;
+	border: 2px solid var(--navy-blue-modal);
 	border-radius: 2px;
-	border: 1px solid var(--navy-blue-modal);
+	transition: border-color var(--transition), background-color var(--transition), fill var(--transition);
+}
+
+.checkbox .checkbox-input:checked + .icon-checkbox {
+	background-color: var(--ocean);
+	border-color: var(--ocean);
+	fill: var(--white);
+	outline: none;
+	stroke: var(--white);
+	stroke-width: 0.2;
 }
 
 .checkbox label {
+	flex: 2;
 	font-family: var(--font-family);
 	font-weight: 400;
 	font-size: 12px;
@@ -323,6 +361,7 @@ textarea {
 }
 
 .send-btn {
+	align-self: center;
 	border-radius: 4px;
 	padding: 16px 32px;
 	width: 169px;
